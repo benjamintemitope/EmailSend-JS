@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailSend JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="contact-body">
+    <main>
+        <div class="page-contact">
+            <div class="page-contact-container">
+                <h4 class="form-input-title">Send Message</h4>
+                <p class="form-input-subheading">Fields with (<span class="sign-red">*</span>) is required. </p>
+                <form id="form-feild">
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <label for="sender-email">Sender's Email <span class="sign-red">*</span></label>
+                            <input type="email" name="sender-email" id="sender-email" placeholder="Sender's Email" required>
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <label for="recipient-email">Recipient's Email <span class="sign-red">*</span></label>
+                            <input type="text" name="recipient-email" id="recipient-email" placeholder="Recipient's Email" required>
+                            <small>For sending multipe emails seperate with a coma sign.</small>
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <label for="subject">Subject </label>
+                            <input type="text" name="subject" id="subject" value="EmailSend JS Demo" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <label for="message">Message <span class="sign-red">*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <small>Supports HTML Tags</small>
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <button type="submit" id="form-button">Send Email</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/script.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>

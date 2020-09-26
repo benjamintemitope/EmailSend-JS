@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body.contact-body {
+	background-color: #249DCA;
+	font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.page-contact {
+	margin: 1rem;
+	background-color: #ffffff;
+	border: 1px solid #d1d1d1;
+	max-width: 50rem;
+    min-height: 100vh;
+}
+
+.page-contact .page-contact-container {
+	padding: 0.5rem;
+}
+
+.page-contact .page-contact-container .form-input-title {
+	padding: 0 .8rem .8rem .5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.page-contact .page-contact-container .form-input-subheading {
+	padding: 0 .8rem .8rem .5rem;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.sign-red {
+	color: red;
+}
+
+.page-contact-container form {
+	
+}
+
+.page-contact-container .form-input-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: .5rem;
+}
+
+.page-contact-container .form-input-group .form-input {
+	flex: 1;
+	padding-left: 0.1rem;
+	padding-right: 0.3rem;
+	padding-top: 0.7rem;
+}
+
+.page-contact-container .form-input-group .form-input input[type=text],
+.page-contact-container .form-input-group .form-input input[type=email], 
+.page-contact-container .form-input-group .form-input textarea {
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	padding: .7rem;
+	margin-top: .3rem;
+	background-color: #f2f2f2;
+	color: #000000;
+	outline: none;
+	border: none;
+	transition: all .2s ease;
+}
+
+.page-contact-container .form-input-group .form-input input[type=text]:focus,
+.page-contact-container .form-input-group .form-input input[type=email]:focus,
+.page-contact-container .form-input-group .form-input textarea:focus {
+	background-color: #D3D3D3;
+	color:#111111;
+}
+
+.page-contact-container .form-input-group .form-input button {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.2rem;
+	padding: .5rem 1.25rem;
+    min-width: 9rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #249DCA;
+    color: #ffffff;
+    border-radius: .3rem;
+    transition: all .2s ease;
+}
+
+.page-contact-container .form-input-group .form-input button:hover {
+	background-color: #248CB3;
+}
+
+.page-contact-container .form-input-group .form-input button:focus {
+	background-color: #248CB3;
+	box-shadow: 0 1px 8px 3px #249DCA;
+}
